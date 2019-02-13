@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Converter</title>
+  </head>
+  <body>
+      <h1 id="title">Kg to st &</br>lb Converter</h1>
+  <div id="workingbox">
+      <h3 id="boxtext">Please input your weight in KG below:</h3>
+      <input type="number" name="weight" id="weightinput">
+      <button id="submit" type="submit" name="Calculate">Calculate</button>
+  </div>
+  <h2 id="result"></h2>
+  </body>
+
+
+  <script>
+
+    let submitButton = document.getElementById("weightinput");
+    submitButton.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+        document.getElementById("submit").click();
+  }
+});
+    
+    function weightConversion() {
+  let kilos = document.getElementById("weightinput").value;
+  let result = document.getElementById("result");
+  let stones = Math.floor(kilos/6.35029318);
+  
+  let pounds = Math.round((((kilos/6.35029318) - stones) * 14));
+
+  result.textContent = `You weigh ${stones} stone and ${pounds} pounds`;
+      }
+
+    var submitClicked = document.getElementById("submit");
+    submitClicked.addEventListener('click', weightConversion, false);
+  </script>
+</html>
