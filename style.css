@@ -1,0 +1,75 @@
+body { 
+    /* background-color: #eecbee; */
+background-image: url(././images/background.svg);
+background-repeat: no-repeat;
+/* background-size: cover; */
+}
+
+#title {
+    text-align: right;
+    margin-right: 6%;
+    margin-top: 4%;
+    color: whitesmoke;
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    font-weight: 40;
+}
+
+#result {
+    font-family: 'Bangers', cursive;
+    font-size: 3.5rem;
+    font-weight: 40;
+    margin-left: 5%; 
+    margin-top: 140px;
+    color: rgb(10, 10, 102);
+}
+
+#workingbox {
+    width: 600px;
+    height: 250px;
+    border: black 2px solid;
+    border-radius: 10px;
+    background-color: rgba(75,0,250, 0.5);
+    box-shadow: 0 9px 13px 0 rgba(0,0,0, 0.5),
+            0 7px 9px 0 rgba(0,0,0, 0.5);
+    position: relative;
+    left: 20%;
+    top: 50px;
+}
+
+#boxtext {
+    font-family: 'Bangers', cursive;
+    font-weight: 40;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+#weightinput {
+    width: 100px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#submit {
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Bangers', cursive;
+    height: 40px;
+    width: 90px;
+    border: black 1px solid;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    left: 42.5%;
+    top: 20px;
+}
+
+#submit:hover {
+border: blue 2px solid;
+}
